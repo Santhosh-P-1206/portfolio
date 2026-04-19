@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http.equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale-1.0" />
+    <title>Personal Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
+    <link href="qualifi.css" rel="stylesheet" />
+     <script>
+        function showTime() {
+         var time = new Date();
+         var h = time.getHours();
+        var m = time.getMinutes();
+        var s = time.getSeconds();
+        var y = time.getFullYear();
+        var mo = time.getMonth();
+        var d = time.getDate();
+        document.getElementById("date").innerHTML = d + "/" + (mo + 1) + "/" + y;
+        document.getElementById("clock").innerHTML = h + ":" + m + ":" + s;
+        }
+        setInterval(showTime, 1000);
+      </script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo"> Portfolio</a>
+      <ul>
+        <li ><a href="Protfolio.html">Home</a></li>
+        <li ><a href="about.html">About</a></li>
+        <li class="active"><a href="qualifi.html">Qualification</a></li>
+        <li><a href="skill.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="home">
+      <div class="home-info">
+        <h1>Qualification</h1>
+          <h2>I'm <span>Santhosh Palanivel</span></h2>
+        <table border="3">
+            <tr>
+                <th>Qualification</th>
+                <th>Institution</th>
+                <th>Year of Passing</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td>B.Tech IT</td>
+                <td>Muthayammal Engineering College (Autonomous)</td>
+                <td>2026</td>
+                <td>76%</td>
+            </tr>
+            <tr>
+                <td>HSC</td>
+                <td>Amrutha Matric Higher secondary School, Dharmapuri</td>
+                <td>2022</td>
+                <td>70%</td>
+            </tr>
+            <tr>
+                <td>SSLC</td>
+                <td>Amrutha Matric Higher secondary School, Dharmapuri</td>
+                <td>2020</td>
+                <td>91%</td>
+            </tr>
+        </table>
+        <div class="bio-sci">
+          <a href="Santhosh_resume.pdf" class="bio">Download Cv</a>
+          <div class="sci">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=santhoshp1206@gmail.com"><i class="bx bx-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/santhosh-p-295a29261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bx bxl-linkedin"></i></a>
+        
+            <a href="tel:+919597504977"><i class="bx bxs-phone"></i></a>
+            </div>
+        </div>
+        <p id="date"></p>
+        <p id="clock"></p>
+      </div>
+      <div class="home-img">
+        <div class="img-box">
+          <div class="img-item">
+            <img src="sandy.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
